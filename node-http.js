@@ -9,12 +9,12 @@ const style = readFileSync("./style.css");
 const server = http.createServer((req, res) => {
   get("/", () => {
     headers(200, "text/html");
-    res.end("");
+    res.end(homeHtml);
   });
 
   get("/about", () => {
     headers(200, "text/html");
-    res.end("");
+    res.end(aboutHtml);
   });
 
   get("/logo.png", () => {
