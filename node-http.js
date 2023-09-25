@@ -1,10 +1,10 @@
 const http = require("http");
 const { readFileSync } = require("fs");
 
-const homeHtml = readFileSync("./index.html");
-const aboutHtml = readFileSync("./about.html");
-const logo = readFileSync("./logo.png");
-const style = readFileSync("./style.css");
+const homeHtml = readFileSync("./public/index.html");
+const aboutHtml = readFileSync("./public/about.html");
+const logo = readFileSync("./public/logo.png");
+const style = readFileSync("./public/style.css");
 
 const server = http.createServer((req, res) => {
   get("/", () => {
